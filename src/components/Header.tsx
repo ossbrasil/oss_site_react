@@ -2,9 +2,11 @@ import { DotsNineIcon } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 import { Menu } from "./Menu";
 import logo from "/assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -43,7 +45,7 @@ export const Header = () => {
   return (
     <>
       <header className="bg-transparent fixed top-0 w-full flex justify-between items-center px-6 md:px-24 py-8 z-40">
-        <a href="#home" className="navbar-brand">
+        <a onClick={() => navigate("/")} className="navbar-brand cursor-pointer">
           <img
             src={logo}
             alt="Logo"

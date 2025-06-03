@@ -1,4 +1,5 @@
 import { InstagramLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react";
+import { useNavigate } from "react-router-dom";
 
 interface MenuProps {
   isOpen: boolean;
@@ -6,7 +7,8 @@ interface MenuProps {
 }
 
 export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
-
+  const navigate = useNavigate();
+  
   return (
     <div
       className={`fixed top-0 right-0 h-full w-full md:w-1/3 bg-gray-100 shadow-xl transform transition-transform duration-300 ease-in-out z-50 ${
@@ -17,32 +19,32 @@ export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
         <ul className="space-y-5">
           <li>
             <a
-              href="#"
-              className="text-3xl text-black hover:text-[#972620] transition-colors"
+               onClick={() => navigate("/solucoes")}
+              className="text-3xl text-black hover:text-[#972620] transition-colors cursor-pointer"
             >
               Soluções
             </a>
           </li>
           <li>
             <a
-              href="#alem-do-basico"
-              className="text-3xl text-black hover:text-[#972620] transition-colors"
+              onClick={() => navigate("/alem-do-basico")}
+              className="text-3xl text-black hover:text-[#972620] transition-colors cursor-pointer"
             >
               Além do básico
             </a>
           </li>
           <li>
             <a
-              href="#diferenciais"
-              className="text-3xl text-black hover:text-[#972620] transition-colors"
+              onClick={() => navigate("/diferenciais")}
+              className="text-3xl text-black hover:text-[#972620] transition-colors cursor-pointer"
             >
               Diferenciais
             </a>
           </li>
           <li>
             <a
-              href="#"
-              className="text-3xl text-black hover:text-[#972620] transition-colors"
+              onClick={() => navigate("/clientes")}
+              className="text-3xl text-black hover:text-[#972620] transition-colors cursor-pointer"
             >
               Clientes
             </a>
