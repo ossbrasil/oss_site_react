@@ -30,7 +30,7 @@ export const BeyondBasicsPage = () => {
                     playsInline
                     className="w-full h-full object-cover"
                 >
-                    <source src="/assets/videos/bg_alem_do_basico.mp4" type="video/mp4" />
+                    <source src="/assets/videos/bg_alem_do_basico.mp4" type="video/mp4"/>
                 </video>
                 <div className="absolute inset-0 bg-black/50"></div>
             </div>
@@ -61,10 +61,10 @@ export const BeyondBasicsPage = () => {
                             {cards.map((card, index) => (
                                 <div
                                     key={index}
-                                    className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 w-full max-w-xs flex flex-col hover:bg-white/20 transition-all duration-300"
+                                    className="bg-white/10 backdrop-blur-xs border border-white/20 rounded-4xl p-8 w-full max-w-xs flex flex-col hover:bg-white/20 transition-all duration-300"
                                 >
                                     <div className="flex flex-col">
-                                        <img className="size-18 mb-4" src={card.icon} alt={card.title} />
+                                        <img className="size-18 mb-4" src={card.icon} alt={card.title}/>
                                         <h3 className="text-2xl font-medium text-white mb-4">
                                             {card.title}
                                         </h3>
@@ -85,11 +85,11 @@ export const BeyondBasicsPage = () => {
                     <div className="flex items-center justify-end">
                         <div className="flex items-center space-x-3 cursor-pointer group">
                             <p className="text-white text-sm transition-colors">
-                                Conheça mais um <br /> pouco das nossas
-                                <br />
+                                Conheça mais um <br/> pouco das nossas
+                                <br/>
                                 <span className="font-bold">soluções</span>
                             </p>
-                            <img className="size-10" src="/assets/link-icon.png" alt="Link icon" />
+                            <img className="size-10" src="/assets/link-icon.png" alt="Link icon"/>
                         </div>
                     </div>
                 </div>
