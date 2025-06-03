@@ -43,11 +43,11 @@ export const DifferentialsPage = () => {
                 </div>
 
                 <div className="flex items-center justify-center min-h-[60vh]">
-                    <div className="flex flex-col lg:flex-row justify-center gap-10 w-full max-w-6xl">
+                    <div className="flex flex-col items-center lg:items-stretch lg:flex-row justify-center gap-10 w-full max-w-6xl">
                         {services.map((service, index) => (
                             <div
                                 key={index}
-                                className="bg-white/10 backdrop-blur-xs border border-white/20 rounded-4xl p-8 py-15 flex-1 max-w-xs flex flex-col hover:bg-white/20 transition-all duration-300"
+                                className="bg-white/10 backdrop-blur-xs border max-h-fit border-white/20 rounded-4xl p-8 py-15 flex-1 max-w-xs flex flex-col hover:bg-white/20 transition-all duration-300"
                             >
                                 <div className="flex flex-col mb-3">
                                     <img
