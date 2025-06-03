@@ -6,6 +6,7 @@ interface MenuProps {
 }
 
 export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
+
   return (
     <div
       className={`fixed top-0 right-0 h-full w-full md:w-1/3 bg-gray-100 shadow-xl transform transition-transform duration-300 ease-in-out z-50 ${

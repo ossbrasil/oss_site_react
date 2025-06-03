@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import { HomePage } from "./pages/HomePage";
+import { BeyondBasicsPage } from "./pages/BeyondBasicsPage";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/alem-do-basico" element={<BeyondBasicsPage />} />
       </Routes>
     </BrowserRouter>
   );

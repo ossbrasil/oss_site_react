@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import autoplay_site_oss from "/assets/videos/autoplay_site_oss.mp4";
 import { SpeakerHighIcon, SpeakerXIcon } from "@phosphor-icons/react";
 
@@ -49,6 +49,7 @@ export const HomePage = () => {
         loop
         playsInline
         muted={isMuted}
+        id="background-video"
       />
       {showCustomCursor && (
         <div
