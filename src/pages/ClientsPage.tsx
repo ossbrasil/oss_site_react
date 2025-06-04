@@ -61,7 +61,7 @@ export const ClientsPage = () => {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-full object-left object-cover md:object-cover"
         >
           <source src="/assets/videos/clientes.webm" type="video/mp4" />
         </video>
@@ -77,7 +77,7 @@ export const ClientsPage = () => {
 
         <div className="mb-16">
           <div className="w-full max-w-6xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-12 lg:gap-16">
               {clients.map((client, index) => (
                 <div
                   key={index}

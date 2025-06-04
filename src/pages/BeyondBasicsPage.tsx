@@ -38,7 +38,7 @@ export const BeyondBasicsPage = () => {
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 pt-24 md:pt-32">
+      <div className="relative z-10 container mx-auto px-6 pt-32 pb-24 md:pt-32 md:pb-0">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-light">
             /Além do <span className="text-[#972620]">Básico</span>

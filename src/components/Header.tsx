@@ -44,7 +44,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="bg-transparent fixed top-0 w-full flex justify-between items-center px-6 md:px-24 py-8 z-40">
+      <header className="backdrop-blur-xl md:backdrop-blur-none md:bg-transparent fixed top-0 w-full flex justify-between rounded-xl items-center px-6 md:px-24 py-6 md:py-8 z-40">
         <a
           onClick={() => navigate("/")}
           className="navbar-brand cursor-pointer"

@@ -10,7 +10,7 @@ export const NotFoundPage = () => {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-full object-left object-cover md:object-cover"
         >
           <source src={notfound} type="video/webm" />
         </video>
