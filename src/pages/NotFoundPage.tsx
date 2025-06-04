@@ -62,6 +62,12 @@ export const NotFoundPage = () => {
             >
               Além do Básico
             </Link>
+            <Link
+              to="/diferenciais"
+              className="text-white/80 hover:text-[#972620] transition-colors duration-300 underline decoration-transparent hover:decoration-current"
+            >
+              Diferenciais
+            </Link>
           </div>
         </div>
       </div>
