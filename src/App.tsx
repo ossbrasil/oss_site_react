@@ -4,6 +4,7 @@ import { HomePage } from "./pages/HomePage";
 import { BeyondBasicsPage } from "./pages/BeyondBasicsPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { DifferentialsPage } from "./pages/DifferentialsPage.tsx";
+import { ClientsPage } from "./pages/ClientsPage.tsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/alem-do-basico" element={<BeyondBasicsPage />} />
         <Route path="/diferenciais" element={<DifferentialsPage />} />
+        <Route path="/clientes" element={<ClientsPage />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
