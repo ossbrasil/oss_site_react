@@ -79,10 +79,10 @@ export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
         </p>
         <div className="flex space-x-4 mt-3">
           <a href="https://www.instagram.com/oss.brasil/" target="_blank">
-            <InstagramLogoIcon size={64} color="#972620" />
+            <InstagramLogoIcon size={32} color="#972620" />
           </a>
           <a href="https://www.linkedin.com/company/ossbrasil" target="_blank">
-            <LinkedinLogoIcon size={64} color="#972620" />
+            <LinkedinLogoIcon size={32} color="#972620" />
           </a>
         </div>
       </div>
