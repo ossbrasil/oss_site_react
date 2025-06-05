@@ -5,6 +5,7 @@ import { BeyondBasicsPage } from './pages/BeyondBasicsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { DifferentialsPage } from './pages/DifferentialsPage.tsx';
 import { ClientsPage } from './pages/ClientsPage.tsx';
+import { SolutionsPage } from './pages/SolutionsPage.tsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/alem-do-basico" element={<BeyondBasicsPage />} />
         <Route path="/diferenciais" element={<DifferentialsPage />} />
         <Route path="/clientes" element={<ClientsPage />} />
+        <Route path="/solucoes" element={<SolutionsPage />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
