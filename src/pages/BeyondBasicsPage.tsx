@@ -1,22 +1,22 @@
 export const BeyondBasicsPage = () => {
   const cards = [
     {
-      icon: "/assets/rastreamento.png",
-      title: "Rastreamento",
+      icon: '/assets/rastreamento.png',
+      title: 'Rastreamento',
       description:
-        "Acompanhamos a localização de cada veículo com precisão através de GPS, facilitando a coordenação e garantindo uma resposta rápida a incidentes. Com essas informações valiosas, é possível direcionar motoristas para serviços de forma ágil e eficaz.",
+        'Acompanhamos a localização de cada veículo com precisão através de GPS, facilitando a coordenação e garantindo uma resposta rápida a incidentes. Com essas informações valiosas, é possível direcionar motoristas para serviços de forma ágil e eficaz.',
     },
     {
-      icon: "/assets/combustivel.png",
-      title: "Combustível",
+      icon: '/assets/combustivel.png',
+      title: 'Combustível',
       description:
-        "Acompanhamos a localização de cada veículo com precisão através de GPS, facilitando a coordenação e garantindo uma resposta rápida a incidentes. Com essas informações valiosas, é possível direcionar motoristas para serviços de forma ágil e eficaz.",
+        'Acompanhamos a localização de cada veículo com precisão através de GPS, facilitando a coordenação e garantindo uma resposta rápida a incidentes. Com essas informações valiosas, é possível direcionar motoristas para serviços de forma ágil e eficaz.',
     },
     {
-      icon: "/assets/manutencao.png",
-      title: "Manutenção",
+      icon: '/assets/manutencao.png',
+      title: 'Manutenção',
       description:
-        "Indicamos através de checklists obtidos, manutenções preventivas de acordo com cada veículo indiviualmente, facilitando e evitando transtornos e manutenções corretivas.",
+        'Indicamos através de checklists obtidos, manutenções preventivas de acordo com cada veículo indiviualmente, facilitando e evitando transtornos e manutenções corretivas.',
     },
   ];
 

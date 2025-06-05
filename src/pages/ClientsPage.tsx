@@ -1,52 +1,52 @@
 export const ClientsPage = () => {
   const clients = [
     {
-      logo: "/assets/zelo.svg",
-      alt: "Grupo Zelo",
+      logo: '/assets/zelo.svg',
+      alt: 'Grupo Zelo',
     },
     {
-      logo: "/assets/cemfy.svg",
-      alt: "Cemfy",
+      logo: '/assets/cemfy.svg',
+      alt: 'Cemfy',
     },
     {
-      logo: "/assets/fpass.svg",
-      alt: "FPass Assistência",
+      logo: '/assets/fpass.svg',
+      alt: 'FPass Assistência',
     },
     {
-      logo: "/assets/consolare.svg",
-      alt: "Consolare",
+      logo: '/assets/consolare.svg',
+      alt: 'Consolare',
     },
     {
-      logo: "/assets/atuant.svg",
-      alt: "Atuant",
+      logo: '/assets/atuant.svg',
+      alt: 'Atuant',
     },
     {
-      logo: "/assets/fvb.svg",
-      alt: "FVB",
+      logo: '/assets/fvb.svg',
+      alt: 'FVB',
     },
     {
-      logo: "/assets/gnasser.svg",
-      alt: "GN Nasser Advogados",
+      logo: '/assets/gnasser.svg',
+      alt: 'GN Nasser Advogados',
     },
     {
-      logo: "/assets/franco_da_rocha.svg",
-      alt: "Prefeitura Franco da Rocha",
+      logo: '/assets/franco_da_rocha.svg',
+      alt: 'Prefeitura Franco da Rocha',
     },
     {
-      logo: "/assets/guaruja_prefeitura.svg",
-      alt: "Prefeitura de Guarujá",
+      logo: '/assets/guaruja_prefeitura.svg',
+      alt: 'Prefeitura de Guarujá',
     },
     {
-      logo: "/assets/guaruja.svg",
-      alt: "Câmara Municipal de Guarujá",
+      logo: '/assets/guaruja.svg',
+      alt: 'Câmara Municipal de Guarujá',
     },
     {
-      logo: "/assets/sao_bernardo_do_campo.svg",
-      alt: "São Bernardo do Campo",
+      logo: '/assets/sao_bernardo_do_campo.svg',
+      alt: 'São Bernardo do Campo',
     },
     {
-      logo: "/assets/taboao.svg",
-      alt: "Taboão da Serra",
+      logo: '/assets/taboao.svg',
+      alt: 'Taboão da Serra',
     },
   ];
 

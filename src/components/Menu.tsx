@@ -1,5 +1,5 @@
-import { InstagramLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react";
-import { useNavigate } from "react-router-dom";
+import { InstagramLogoIcon, LinkedinLogoIcon } from '@phosphor-icons/react';
+import { useNavigate } from 'react-router-dom';
 
 interface MenuProps {
   isOpen: boolean;
@@ -12,14 +12,14 @@ export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
   return (
     <div
       className={`fixed top-0 right-0 h-full w-full md:w-1/3 bg-gray-100 shadow-xl transform transition-transform duration-300 ease-in-out z-50 ${
-        isOpen ? "translate-x-0" : "translate-x-full"
+        isOpen ? 'translate-x-0' : 'translate-x-full'
       } flex flex-col justify-around`}
     >
       <nav className="px-8 pt-8 mt-8">
         <ul className="space-y-5">
           <li>
             <a
-              onClick={() => navigate("/solucoes")}
+              onClick={() => navigate('/solucoes')}
               className="text-3xl text-black hover:text-[#972620] transition-colors cursor-pointer"
             >
               Soluções
@@ -27,7 +27,7 @@ export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
           </li>
           <li>
             <a
-              onClick={() => navigate("/alem-do-basico")}
+              onClick={() => navigate('/alem-do-basico')}
               className="text-3xl text-black hover:text-[#972620] transition-colors cursor-pointer"
             >
               Além do básico
@@ -35,7 +35,7 @@ export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
           </li>
           <li>
             <a
-              onClick={() => navigate("/diferenciais")}
+              onClick={() => navigate('/diferenciais')}
               className="text-3xl text-black hover:text-[#972620] transition-colors cursor-pointer"
             >
               Diferenciais
@@ -43,7 +43,7 @@ export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
           </li>
           <li>
             <a
-              onClick={() => navigate("/clientes")}
+              onClick={() => navigate('/clientes')}
               className="text-3xl text-black hover:text-[#972620] transition-colors cursor-pointer"
             >
               Clientes

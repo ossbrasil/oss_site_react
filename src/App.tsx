@@ -1,10 +1,10 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "./components/Header";
-import { HomePage } from "./pages/HomePage";
-import { BeyondBasicsPage } from "./pages/BeyondBasicsPage";
-import { NotFoundPage } from "./pages/NotFoundPage";
-import { DifferentialsPage } from "./pages/DifferentialsPage.tsx";
-import { ClientsPage } from "./pages/ClientsPage.tsx";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Header } from './components/Header';
+import { HomePage } from './pages/HomePage';
+import { BeyondBasicsPage } from './pages/BeyondBasicsPage';
+import { NotFoundPage } from './pages/NotFoundPage';
+import { DifferentialsPage } from './pages/DifferentialsPage.tsx';
+import { ClientsPage } from './pages/ClientsPage.tsx';
 
 function App() {
   return (

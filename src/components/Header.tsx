@@ -1,8 +1,8 @@
-import { DotsNineIcon } from "@phosphor-icons/react";
-import { useEffect, useState } from "react";
-import { Menu } from "./Menu";
-import logo from "/assets/logo.png";
-import { useNavigate } from "react-router-dom";
+import { DotsNineIcon } from '@phosphor-icons/react';
+import { useEffect, useState } from 'react';
+import { Menu } from './Menu';
+import logo from '/assets/logo.png';
+import { useNavigate } from 'react-router-dom';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +19,7 @@ export const Header = () => {
   // Close menu on ESC key or outside click
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
+      if (event.key === 'Escape') {
         closeMenu();
       }
     };
@@ -27,18 +27,18 @@ export const Header = () => {
     const handleClick = (event: MouseEvent) => {
       if (
         !(event.target instanceof Element) ||
-        (!event.target.closest(".menu") && !event.target.closest(".menu-icon"))
+        (!event.target.closest('.menu') && !event.target.closest('.menu-icon'))
       ) {
         closeMenu();
       }
     };
 
-    document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("click", handleClick);
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('click', handleClick);
 
     return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("click", handleClick);
+      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener('click', handleClick);
     };
   }, []);
 
@@ -46,7 +46,7 @@ export const Header = () => {
     <>
       <header className="backdrop-blur-xl md:backdrop-blur-none md:bg-transparent fixed top-0 w-full flex justify-between rounded-xl items-center px-6 md:px-24 py-6 md:py-8 z-40">
         <a
-          onClick={() => navigate("/")}
+          onClick={() => navigate('/')}
           className="navbar-brand cursor-pointer"
         >
           <img

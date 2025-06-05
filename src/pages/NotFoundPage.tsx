@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import notfound from "/assets/videos/404notfound.webm";
+import { Link } from 'react-router-dom';
+import notfound from '/assets/videos/404notfound.webm';
 
 export const NotFoundPage = () => {
   return (

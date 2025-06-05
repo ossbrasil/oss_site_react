@@ -1,21 +1,21 @@
 export const DifferentialsPage = () => {
   const services = [
     {
-      icon: "/assets/sofware.png",
-      title: "Software",
-      description: "Personalizado de acordo com a necessidade do negócio.",
+      icon: '/assets/sofware.png',
+      title: 'Software',
+      description: 'Personalizado de acordo com a necessidade do negócio.',
     },
     {
-      icon: "/assets/consultoria.png",
-      title: "Consultoria de TI",
+      icon: '/assets/consultoria.png',
+      title: 'Consultoria de TI',
       description:
-        "Suporte direto com a equipe interna de desenvolvimento para ter clareza e velocidade no progresso de novos módulos.",
+        'Suporte direto com a equipe interna de desenvolvimento para ter clareza e velocidade no progresso de novos módulos.',
     },
     {
-      icon: "/assets/analise.png",
-      title: "Análise de Dados",
+      icon: '/assets/analise.png',
+      title: 'Análise de Dados',
       description:
-        "Processamento em tempo real para otimizar a eficiência operacional e aprimorar a gestão.",
+        'Processamento em tempo real para otimizar a eficiência operacional e aprimorar a gestão.',
     },
   ];
 
