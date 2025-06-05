@@ -1,6 +1,10 @@
 export const ClientsPage = () => {
   const clients = [
     {
+      logo: '/assets/consolare.svg',
+      alt: 'Consolare',
+    },
+    {
       logo: '/assets/zelo.svg',
       alt: 'Grupo Zelo',
     },
@@ -11,10 +15,6 @@ export const ClientsPage = () => {
     {
       logo: '/assets/fpass.svg',
       alt: 'FPass Assistência',
-    },
-    {
-      logo: '/assets/consolare.svg',
-      alt: 'Consolare',
     },
     {
       logo: '/assets/atuant.svg',
