@@ -29,8 +29,8 @@ export const ClientsPage = () => {
       alt: 'GN Nasser Advogados',
     },
     {
-      logo: '/assets/franco_da_rocha.svg',
-      alt: 'Prefeitura Franco da Rocha',
+      logo: '/assets/bosque_da_paz.svg',
+      alt: 'Memorial Bosque da Paz',
     },
     {
       logo: '/assets/guaruja_prefeitura.svg',
@@ -41,8 +41,8 @@ export const ClientsPage = () => {
       alt: 'Câmara Municipal de Guarujá',
     },
     {
-      logo: '/assets/sao_bernardo_do_campo.svg',
-      alt: 'São Bernardo do Campo',
+      logo: '/assets/governo_de_sao_paulo.svg',
+      alt: 'Governo de São Paulo',
     },
     {
       logo: '/assets/taboao.svg',
