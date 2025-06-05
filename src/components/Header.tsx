@@ -97,7 +97,7 @@ export const Header = () => {
           }
         }
       }
-    } catch (error) {}
+    } catch { /* empty */ }
 
     animationFrameRef.current = requestAnimationFrame(checkVideoColor);
   }, []);

@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 export const BeyondBasicsPage = () => {
+  const navigate = useNavigate();
+
   const cards = [
     {
       icon: '/assets/rastreamento.png',
@@ -91,7 +95,12 @@ export const BeyondBasicsPage = () => {
         <div className="w-full max-w-6xl mx-auto">
           <div className="flex items-center justify-end">
             <div className="flex items-center space-x-3 cursor-pointer group">
-              <p className="text-white text-sm transition-colors">
+              <p
+                className="text-white text-sm transition-colors"
+                onClick={() => {
+                  navigate('/solucoes');
+                }}
+              >
                 Conheça mais um <br /> pouco das nossas
                 <br />
                 <span className="font-bold">soluções</span>
