@@ -257,7 +257,7 @@ export const SolutionsPage = () => {
         <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
-      <div className="relative z-10 min-h-screen flex items-center py-8 sm:py-16">
+      <div className="relative z-10 min-h-screen flex items-center py-12 sm:py-16 pb-24 sm:pb-32">
         <div
           className={`flex w-full ${
             isDragging
@@ -330,20 +330,20 @@ export const SolutionsPage = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20 px-4">
-        <div className="flex items-center justify-center space-x-1 sm:space-x-2 max-w-full overflow-x-auto">
+      <div className="absolute bottom-8 sm:bottom-12 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20 px-4 w-full max-w-md sm:max-w-full">
+        <div className="flex items-center justify-center space-x-1 sm:space-x-2 overflow-x-auto scrollbar-hide pb-2">
           {solutions.map((solution, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
               className={`rounded-full transition-all duration-300 flex items-center justify-center shrink-0 ${
                 index === currentSlide
-                  ? 'bg-[#972620] px-2 sm:px-4 py-1.5 sm:py-2 min-w-max'
-                  : 'bg-white/30 hover:bg-white/50 w-4 h-4 sm:w-5 sm:h-5'
+                  ? 'bg-[#972620] px-3 sm:px-4 py-2 sm:py-2 min-w-max shadow-lg'
+                  : 'bg-white/20 hover:bg-white/40 w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 backdrop-blur-sm'
               }`}
             >
               {index === currentSlide ? (
-                <span className="text-white text-xs sm:text-sm font-medium whitespace-nowrap">
+                <span className="text-white text-xs sm:text-sm font-medium whitespace-nowrap px-1">
                   {solution.title}
                 </span>
               ) : null}
