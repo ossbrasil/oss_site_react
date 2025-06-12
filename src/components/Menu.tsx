@@ -1,4 +1,8 @@
-import { InstagramLogoIcon, LinkedinLogoIcon } from '@phosphor-icons/react';
+import {
+  InstagramLogoIcon,
+  LinkedinLogoIcon,
+  XIcon,
+} from '@phosphor-icons/react';
 import { useNavigate } from 'react-router-dom';
 
 interface MenuProps {
@@ -15,6 +19,9 @@ export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
         isOpen ? 'translate-x-0' : 'translate-x-full'
       } flex flex-col justify-around`}
     >
+      <div className="block md:hidden absolute right-8 top-10">
+        <XIcon size={26} className="cursor-pointer" />
+      </div>
       <nav className="px-8 pt-8 mt-8">
         <ul className="space-y-5">
           <li>
@@ -55,10 +62,11 @@ export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
       <div className="px-8">
         <p className="contact-phone mb-2">
           <a
-            href="tel:+551150394303"
+            href="https://api.whatsapp.com/send/?phone=5511974134852&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20Oss%20Brasil."
             className="text-3xl text-[#972620] no-underline"
+            target="_blank"
           >
-            +55 11 5039-4303
+            +55 11 974134852
           </a>
         </p>
         <p className="mb-2">
@@ -88,11 +96,11 @@ export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
       </div>
 
       <div className="px-8 text-left text-xl text-gray-800">
-        <p>
+        <a href="https://g.co/kgs/cMo4LV1" target="_blank">
           Rua dos Chanés, 278
           <br />
-          Indianópolis - São Paulo - SP
-        </p>
+          Moema - São Paulo - SP
+        </a>
       </div>
     </div>
   );

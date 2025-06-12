@@ -71,7 +71,7 @@ export const ClientsPage = () => {
       <div className="relative z-10 container mx-auto px-6 pt-24 md:pt-32">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-light">
-            /Clientes
+            <span className="slash-blink">/</span>Clientes
           </h1>
         </div>
 
@@ -84,7 +84,7 @@ export const ClientsPage = () => {
                   className="flex items-center justify-center p-6 transition-all duration-300 transform hover:scale-110"
                 >
                   <img
-                    className="max-w-full max-h-16 md:max-h-20 object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity duration-300"
+                    className="max-w-full max-h-16 md:max-h-24 object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity duration-300"
                     src={client.logo}
                     alt={client.alt}
                   />

@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from "react";
-import autoplay_site_oss from "/assets/videos/autoplay_site_oss.mp4";
-import autoplay_site_oss_mobile from "/assets/videos/autoplay_site_oss(mobile).mp4";
-import { SpeakerHighIcon, SpeakerXIcon } from "@phosphor-icons/react";
+import { useEffect, useRef, useState } from 'react';
+import autoplay_site_oss from '/assets/videos/autoplay_site_oss.mp4';
+import autoplay_site_oss_mobile from '/assets/videos/autoplay_site_oss(mobile).mp4';
+import { SpeakerHighIcon, SpeakerXIcon } from '@phosphor-icons/react';
 
 export const HomePage = () => {
   const [isMuted, setIsMuted] = useState(true);
@@ -16,9 +16,9 @@ export const HomePage = () => {
     };
 
     checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
+    window.addEventListener('resize', checkScreenSize);
 
-    return () => window.removeEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
   const toggleMute = () => {
@@ -37,13 +37,13 @@ export const HomePage = () => {
     const handleMouseLeave = () => setShowCustomCursor(false);
     const videoElement = videoRef.current;
     if (videoElement) {
-      videoElement.addEventListener("mousemove", handleMouseMove);
-      videoElement.addEventListener("mouseenter", handleMouseEnter);
-      videoElement.addEventListener("mouseleave", handleMouseLeave);
+      videoElement.addEventListener('mousemove', handleMouseMove);
+      videoElement.addEventListener('mouseenter', handleMouseEnter);
+      videoElement.addEventListener('mouseleave', handleMouseLeave);
       return () => {
-        videoElement.removeEventListener("mousemove", handleMouseMove);
-        videoElement.removeEventListener("mouseenter", handleMouseEnter);
-        videoElement.removeEventListener("mouseleave", handleMouseLeave);
+        videoElement.removeEventListener('mousemove', handleMouseMove);
+        videoElement.removeEventListener('mouseenter', handleMouseEnter);
+        videoElement.removeEventListener('mouseleave', handleMouseLeave);
       };
     }
   }, []);
@@ -75,7 +75,7 @@ export const HomePage = () => {
           <div className="flex items-center gap-2 bg-zinc-800/50 text-white px-3 py-2 rounded-lg backdrop-blur-md shadow-lg border border-white/20 whitespace-nowrap">
             {isMuted ? <SpeakerXIcon /> : <SpeakerHighIcon />}
             <span className="text-sm font-medium">
-              {isMuted ? "Sem som" : "Com som"}
+              {isMuted ? 'Ativar som' : 'Desativar som'}
             </span>
           </div>
         </div>
