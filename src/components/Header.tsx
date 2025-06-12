@@ -97,7 +97,9 @@ export const Header = () => {
           }
         }
       }
-    } catch { /* empty */ }
+    } catch {
+      /* empty */
+    }
 
     animationFrameRef.current = requestAnimationFrame(checkVideoColor);
   }, []);
@@ -167,14 +169,14 @@ export const Header = () => {
             alt="Logo"
             width="137"
             height="39"
-            className="inline-block align-top transition-all duration-500"
+            className="inline-block align-top transition-all duration-100"
             style={{
               filter: shouldInvertColors ? 'invert(1)' : 'none',
             }}
           />
         </a>
         <div
-          className="menu-icon cursor-pointer text-4xl animate-pulse transition-all duration-500 hover:text-[#972620]"
+          className="menu-icon cursor-pointer text-4xl animate-pulse transition-all duration-100 hover:text-[#972620]"
           style={{
             color: shouldInvertColors ? '#000' : '#fff',
           }}

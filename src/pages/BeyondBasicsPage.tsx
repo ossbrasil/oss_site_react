@@ -14,7 +14,7 @@ export const BeyondBasicsPage = () => {
       icon: '/assets/combustivel.png',
       title: 'Combustível',
       description:
-        'Acompanhamos a localização de cada veículo com precisão através de GPS, facilitando a coordenação e garantindo uma resposta rápida a incidentes. Com essas informações valiosas, é possível direcionar motoristas para serviços de forma ágil e eficaz.',
+        'Monitoramos o consumo de combustível de cada veículo para identificar padrões e irregularidades. Além disso, estamos sempre atentos às datas e os volumes de abastecimento para garantir que os veículos estejam sempre com o combustível necessário e evitar interrupções nos serviços.',
     },
     {
       icon: '/assets/manutencao.png',
@@ -45,7 +45,7 @@ export const BeyondBasicsPage = () => {
       <div className="relative z-10 container mx-auto px-6 pt-32 pb-24 md:pt-32 md:pb-0">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-light">
-            /Além do <span className="text-[#972620]">Básico</span>
+            <span className="slash-blink">/</span>Além do Básico
           </h1>
         </div>
 

@@ -40,11 +40,11 @@ export const DifferentialsPage = () => {
       <div className="relative z-10 container mx-auto px-6 pt-24 md:pt-32">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-light">
-            /Diferenciais
+            <span className="slash-blink">/</span>Diferenciais
           </h1>
         </div>
 
-        <div className="flex items-center justify-center min-h-[60vh]">
+        <div className="flex items-center justify-center min-h-[60vh] mb-15 md:mb-0">
           <div className="flex flex-col items-center lg:items-stretch lg:flex-row justify-center gap-10 w-full max-w-6xl">
             {services.map((service, index) => (
               <div

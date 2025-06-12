@@ -301,7 +301,7 @@ export const SolutionsPage = () => {
                   </div>
 
                   <div className="relative flex justify-center order-1 lg:order-2">
-                    <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl">
+                    <div className="relative mt-20 w-full max-w-2xs sm:max-w-md md:max-w-lg lg:max-w-4xl">
                       <img
                         src={solution.computerImage}
                         alt="Computer"
